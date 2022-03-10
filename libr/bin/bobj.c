@@ -229,7 +229,6 @@ static void filter_classes(RBinFile *bf, RList *list) {
 
 static RRBTree *list2rbtree(RList *relocs) {
 	RRBTree *tree = r_crbtree_new (free);
-eprintf ("maketri\n");
 	if (tree) {
 		RListIter *it;
 		RBinReloc *reloc;
