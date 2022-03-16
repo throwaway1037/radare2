@@ -1,5 +1,6 @@
 /* radare - LGPL - Copyright 2011-2022 - earada, pancake */
 
+#define R_LOG_ORIGIN "cbin"
 #include <r_core.h>
 #include <r_config.h>
 #include <r_util.h>
@@ -2241,7 +2242,7 @@ static void handle_arm_special_symbol(RCore *core, RBinSymbol *symbol, int va) {
 		// readable.
 	} else {
 		if (core->bin->verbose) {
-			R_LOG_WARN ("Special symbol %s not handled\n", symbol->name);
+			R_LOG_WARN ("Special symbol %s not handled", symbol->name);
 		}
 	}
 }
