@@ -1741,6 +1741,7 @@ static int bin_relocs(RCore *r, PJ *pj, int mode, int va) {
 			pj_a (pj);
 			pj_end (pj);
 		}
+		r_table_free (table);
 		return false;
 	}
 	if (bin_cache) {
